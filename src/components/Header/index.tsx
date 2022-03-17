@@ -36,11 +36,13 @@ export function Header () {
         </>
       ) : (
         <>
-          <Link><ScrollLink to="home" spy smooth>HOME</ScrollLink></Link>
           <Link><ScrollLink to="products" spy smooth>PRODUTOS</ScrollLink></Link>
-          <Logo />
-          <Link><ScrollLink to="home" spy smooth>PRODUTOS</ScrollLink></Link>
-          <Link><ScrollLink to="home" spy smooth>PRODUTOS</ScrollLink></Link>
+          <Link><ScrollLink to="about" spy smooth>SOBRE</ScrollLink></Link>
+          <ScrollLink to="home" spy smooth>
+            <Logo />
+          </ScrollLink>
+          <Link><ScrollLink to="feedbacks" spy smooth>FEEDBACKS</ScrollLink></Link>
+          <Link><ScrollLink to="" spy smooth>HOME</ScrollLink></Link>
         </>
       )}
     </Flex>

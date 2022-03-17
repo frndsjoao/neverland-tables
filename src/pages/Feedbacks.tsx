@@ -12,7 +12,6 @@ export function FeedbacksPage({ id }: PageProps) {
       align="center" 
       justify="center"
       id={id}
-      bgColor="gray.800"
     >
       <Heading mb={["4", "10"]} letterSpacing="0.25rem">FEEDBACKS</Heading>
       <Flex

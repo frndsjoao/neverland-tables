@@ -1,9 +1,8 @@
-import { Flex, Heading } from '@chakra-ui/react'
+import { Flex, Heading, useBreakpointValue } from '@chakra-ui/react'
 import { ProductCard } from '../components/ProductCard'
 import { PageProps } from '../models'
 
-export function ProductsPage({ id }: PageProps) {
-  
+export function ProductsPage({ id }: PageProps) {  
   return (
     <Flex 
       direction="column"
@@ -29,6 +28,7 @@ export function ProductsPage({ id }: PageProps) {
         <ProductCard />
         <ProductCard />
         <ProductCard />
+
       </Flex>
     </Flex>
   )

@@ -6,6 +6,7 @@ export function Logo() {
       src="/logo.png"
       alt="NEVERLAND"
       h="14"
+      cursor="pointer"
     />
   )
 }
