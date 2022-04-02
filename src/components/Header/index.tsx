@@ -42,7 +42,7 @@ export function Header () {
             <Logo />
           </ScrollLink>
           <Link><ScrollLink to="feedbacks" spy smooth>FEEDBACKS</ScrollLink></Link>
-          <Link><ScrollLink to="" spy smooth>HOME</ScrollLink></Link>
+          <Link><ScrollLink to="contact" spy smooth>CONTATO</ScrollLink></Link>
         </>
       )}
     </Flex>
