@@ -34,6 +34,8 @@ export default function About() {
             acordo com a necessidade do cliente, sem contar com estantes e 
             prateleiras para guardar seus jogos.
           </p>
+
+          
         </div>
 
         {/* <div className={styles.aboutImg}>
