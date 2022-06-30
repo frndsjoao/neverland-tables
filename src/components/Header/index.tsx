@@ -1,50 +1,23 @@
-import { Flex, Icon, IconButton, Link, useBreakpointValue } from '@chakra-ui/react'
-import { RiMenuLine } from 'react-icons/ri'
-import { useSidebarDrawer } from '../../contexts/SidebarDrawerContext'
-import { Logo } from './Logo'
-import { Link as ScrollLink } from 'react-scroll'
+import Image from 'next/image'
+import {Link} from 'react-scroll'
 
-export function Header () {
-  const { onOpen } = useSidebarDrawer()
+import logoImg from '../../../public/logo.png'
+import styles from './styles.module.scss'
 
-  const isWideVersion = useBreakpointValue({
-    base: false,
-    lg: true
-  })
-
+export default function Header() {
   return (
-    <Flex
-      as="header"
-      w="100%"
-      maxW="1440px"
-      h="20"
-      px={["4", "12"]}
-      align="center"
-      justify={["space-between" ,"space-evenly"]}
-    >
+    <header className={styles.headerContainer}>
+      <nav className={styles.headerContent}>
+        <Link to="about" spy smooth><p>SOBRE</p></Link>
 
-      {!isWideVersion ? (
-        <>
-          <Logo />
-          <IconButton
-            aria-label='Open navigation'
-            icon={<Icon as={RiMenuLine} />}
-            fontSize="24"
-            variant="unstyled"
-            onClick={onOpen}
-          />
-        </>
-      ) : (
-        <>
-          <Link><ScrollLink to="products" spy smooth>PRODUTOS</ScrollLink></Link>
-          <Link><ScrollLink to="about" spy smooth>SOBRE</ScrollLink></Link>
-          <ScrollLink to="home" spy smooth>
-            <Logo />
-          </ScrollLink>
-          <Link><ScrollLink to="feedbacks" spy smooth>FEEDBACKS</ScrollLink></Link>
-          <Link><ScrollLink to="contact" spy smooth>CONTATO</ScrollLink></Link>
-        </>
-      )}
-    </Flex>
+          <div className={styles.imageWrapper}>
+            <Link to="home" spy smooth>
+              <Image src={logoImg} alt="NeverLand" objectFit="cover" layout='fill' />
+            </Link>
+          </div>
+          
+        <Link to="contact" spy smooth><p>CONTATO</p></Link>
+      </nav>
+    </header>
   )
 }

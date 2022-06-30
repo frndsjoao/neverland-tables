@@ -1,0 +1,35 @@
+.headerContainer {
+  height: 5rem;
+  width: 100%;
+  border-bottom: 1px solid var(--gray-800);
+}
+
+.headerContent {
+  max-width: 1120px;
+  height: 5rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-weight: bold;
+    font-family: var(--font-heading);
+    transition: .3s ease;
+
+    &:hover {
+      color: var(--blue-500);
+    }
+  }
+}
+
+.imageWrapper {
+  margin: 0 150px;
+  padding: 10px 0;
+  height: 4rem;
+  width: 4.9rem;
+  position: relative;
+}
