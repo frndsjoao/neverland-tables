@@ -1,4 +1,4 @@
-.introContainer {
+.contactContainer {
   width: 100%;
   min-height: 500px;
   // background-color: cornsilk;
@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.introWrapper {
+.contactWrapper {
   max-width: 900px;
   height: 400px;
   display: flex;
@@ -22,7 +22,7 @@
   // background-color: burlywood;
 }
 
-.introContent {
+.contactContent {
   flex: 1;
   text-align: center;
   color: #fff;
@@ -65,7 +65,7 @@
   }
 }
 
-.introImg {
+.contactImg {
   max-width: 500px;
   height: 400px;
   flex: 1;

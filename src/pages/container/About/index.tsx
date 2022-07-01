@@ -1,12 +1,12 @@
 import Image from 'next/image'
 
 import { RiMedalLine ,RiShieldCheckLine } from 'react-icons/ri'
-import tableImg from '../../../../public/images/table-01.jpg'
+import tableImg from '../../../../public/images/table-02.jpg'
 import styles from './styles.module.scss'
 
 export default function About() {
   return (
-    <div className={styles.aboutContainer}>
+    <div id="about" className={styles.aboutContainer}>
       <div className={styles.aboutBg} />
 
       <div className={styles.aboutWrapper}>
@@ -35,16 +35,18 @@ export default function About() {
             prateleiras para guardar seus jogos.
           </p>
 
-          
+          <div className={styles.aboutImg}>
+            <div className={styles.aboutImgCard}>
+              <Image src={tableImg} alt="Mesa NeverLand" layout="fill" /> 
+            </div>
+            <div className={styles.aboutImgCard}>
+              <Image src={tableImg} alt="Mesa NeverLand" layout="fill" /> 
+            </div>
+            <div className={styles.aboutImgCard}>
+              <Image src={tableImg} alt="Mesa NeverLand" layout="fill" /> 
+            </div>
+          </div>
         </div>
-
-        {/* <div className={styles.aboutImg}>
-          <Image 
-            src={tableImg}
-            alt="Mesa para board game"
-            layout='fill'
-          />
-        </div> */}
       </div>
     </div>
   )
