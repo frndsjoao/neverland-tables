@@ -14,6 +14,7 @@
   --gray-800: #29292E;
   --gray-850: #1F2729;
   --gray-900: #121214;
+  --gray-950: #0B0B0D;
 
   --blue-500: #4F77E6;
   --blue-700: #384D8F;
@@ -83,4 +84,37 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #FFF;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
