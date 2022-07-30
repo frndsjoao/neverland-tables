@@ -1,8 +1,5 @@
 import Head from 'next/head'
-import InstagramFeed from '../components/InstagramFeed'
 import About from './container/About'
-import Feedbacks from './container/Feedbacks'
-import Contact from './container/Contact'
 import Intro from './container/Intro'
 
 import styles from './mainPage.module.scss'
@@ -17,9 +14,6 @@ export default function Home() {
       <main className={styles.mainContainer}>
         <Intro />
         <About />
-        {/* <InstagramFeed /> */}
-        <Feedbacks />
-        <Contact />
       </main>
     </>
   )
