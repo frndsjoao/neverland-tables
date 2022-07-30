@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Link } from 'react-scroll'
 
-import logoImg from '../../../public/logo.png'
+import logo from '../../../public/logo.png'
 import styles from './styles.module.scss'
 
 import { FiMenu, FiX } from 'react-icons/fi'
@@ -14,7 +14,16 @@ export default function Header() {
   return (
     <header className={styles.navContainer}>
       <nav className={styles.navWrapper}>
-        <h1 className={styles.navLogo}>LOGO</h1>
+        <div className={styles.navLogo}>
+          <Image
+            src={logo}
+            alt="Mesa para board game"
+            layout='fill'
+            width={0}
+            height={0}
+            priority
+          />
+        </div>
 
         <FiMenu
           className={styles.navIconMenu}
@@ -27,7 +36,12 @@ export default function Header() {
           <Link to="About" spy smooth className={styles.linkItem}>Sobre</Link>
           <Link to="Products" spy smooth className={`${styles.lastLinkItem} ${styles.linkItem}`}>Produtos</Link>
 
-          <Button outline title='CONTATO' />
+          <a
+            href="https://api.whatsapp.com/send?1=pt_BR&phone=5512988130420&text=Olá Bruno! Gostaria de solicitar um orçamento por favor."
+            target="_blank" rel="noreferrer"
+          >
+            <Button outline title='CONTATO' />
+          </a>
         </div>
       </nav>
     </header>

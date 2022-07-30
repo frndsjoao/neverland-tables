@@ -23,6 +23,13 @@
     line-height: 1.5rem;
     margin-bottom: 25px;
   }
+  &:hover {
+    transition: all 0.2s ease;
+  
+    svg {
+      color: var(--blue-300);
+    }
+  }
 }
 
 .cardSvg {
@@ -46,13 +53,6 @@
     transition: all 0.2s ease;
   }
 
-  &:hover {
-    transition: all 0.2s ease;
-
-    svg {
-      color: var(--blue-300);
-    }
-  }
 }
 
 

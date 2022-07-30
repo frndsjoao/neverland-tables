@@ -1,0 +1,42 @@
+.container {
+  background-color: var(--gray-900);
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  box-shadow: 5px 5px 2.5px 0px rgba(0,0,0,0.05);
+  -webkit-box-shadow: 5px 5px 2.5px 0px rgba(0,0,0,0.05);
+  -moz-box-shadow: 5px 5px 2.5px 0px rgba(0,0,0,0.05);
+
+  transition: all 0.3s ease-in-out;
+  
+  &:hover {
+    background-color: var(--gray-950);
+    
+    svg {
+      color: var(--blue-300);
+    }
+  }
+  
+  svg {
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .container{
+    display: none;
+  }
+}

@@ -15,6 +15,12 @@
   position: relative;
 }
 
+.navLogo {
+  width: 75px;
+  height: 75px;
+  position: relative;
+}
+
 .navIconMenu {
   width: 25px;
   height: 25px;
@@ -89,5 +95,12 @@
   .navList {
     z-index: 1;
     display: none;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .navLogo {
+    width: 60px;
+    height: 60px;
   }
 }

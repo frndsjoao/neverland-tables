@@ -4,15 +4,26 @@ import Button from '../../../components/Button'
 import styles from './styles.module.scss'
 
 export default function Intro() {
+
   return (
     <main id="Home" className={styles.introContainer}>
       <div className={styles.introWrapper}>
         <div className={styles.introContent}>
-          <h1>Mesas lúdicas para board game.<br />
+          <h1>Neverland Tables</h1>
+          <h2>Mesas lúdicas para board game.<br />
             Feitas sob medida!
-          </h1>
+          </h2>
 
-          <Button title="SOLICITAR ORÇAMENTO" size="lg" />
+          <a
+            href="https://api.whatsapp.com/send?1=pt_BR&phone=5512988130420&text=Olá Bruno! Gostaria de solicitar um orçamento por favor."
+            target="_blank" rel="noreferrer"
+          >
+            <Button
+              title="SOLICITAR ORÇAMENTO"
+              size="lg"
+            />
+          </a>
+
 
           <div className={styles.introInformations}>
             <div className={styles.introInformationWrapper}>
